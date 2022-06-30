@@ -81,6 +81,11 @@ li:last-child {
     padding: 1rem 0;
     width: 11rem;
 }
+
+.yellow {
+    padding: 2rem 0;
+    text-align: center;
+}
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
@@ -149,5 +154,11 @@ li:last-child {
 @media only screen and (max-width: 342px) {
     html {
         font-size: 11.4px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    html {
+        font-size: 9px
     }
 }
