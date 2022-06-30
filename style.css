@@ -15,6 +15,13 @@ body {
     transition: all 0.3s linear;
 }
 
+div.jumbo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
 .zone:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
@@ -34,10 +41,12 @@ body {
     margin: 0;
     height: 100%;
 }
+
 .green > ul > li > a {
     text-decoration: none;
     color: #fff;
 }
+
 .green {
     font-size: 1.2rem;
 }
@@ -47,6 +56,30 @@ li {
 }
 li:last-child {
     float: right;
+}
+
+.blue {
+    padding:2rem 1rem;
+    text-align: center;
+}
+
+
+.pgrid {
+    margin-top:2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-gap: 1rem;
+
+}
+
+.item {
+    background-color: blue;
+    border-radius: 1rem;
+
+}
+.item img {
+    padding: 1rem 0;
+    width: 11rem;
 }
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
