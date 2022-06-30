@@ -136,17 +136,17 @@ li:last-child {
 
 @media only screen and (max-width: 518px) {
     html {
-        font-size: 14px;
+        font-size: 14.5px;
     }
 }
 
 @media only screen and (max-width: 453px){
     html {
-        font-size: 14.5px;
+        font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 342px) {
     html {
         font-size: 11.4px;
     }
