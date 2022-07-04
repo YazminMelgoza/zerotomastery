@@ -1,11 +1,28 @@
+body {
+    margin:3.4rem 0 0 0;
+    font-family: 'Montserrat';
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
 .zone {
     cursor:pointer;
     display:inline-block;
-    text-align: center;
-    font-size:10em;
-    border-radius:4px;
-    border:1px solid #bbb;
+    color:#FFF;
+    font-size:2em;
     transition: all 0.3s linear;
+}
+
+div.jumbo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: hidden;
+}
+.jumbo > img {
+    height: 100%
 }
 
 .zone:hover {
@@ -14,8 +31,67 @@
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
+.navigation > ul {
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation > ul > li {
+    display: inline-block;
+    padding: 1rem 1rem;
+    margin: 0;
+    height: 100%;
+}
+
+.navigation > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation {
+    font-size: 1.2rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+li:last-child {
+    float: right;
+}
+
+.wrapper {
+    padding:2rem 1rem;
+    text-align: center;
+}
 
 
+.pgrid {
+    margin-top:2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    grid-gap: 1rem;
+
+}
+
+.item {
+    background-color: blue;
+    border-radius: 1rem;
+
+}
+.item img {
+    padding: 1rem 0;
+    width: 11rem;
+}
+
+.yellow {
+    padding: 2rem 0;
+    text-align: center;
+}
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
@@ -68,30 +144,29 @@
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
-
-/***********************************************************************
- *  Purple Background
- **********************************************************************/
-.purple {
-    background: #A88BEB; /* Old browsers */
-    background: -moz-linear-gradient(top, #A88BEB 0%, #F1A7F1 44%, #F8CEEC 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A88BEB), color-stop(44%,#F1A7F1), color-stop(100%,#F8CEEC)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* IE10+ */
-    background: linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* W3C */
+.pastel {
+    background-color: #ffeefa;
+}
+@media only screen and (max-width: 518px) {
+    html {
+        font-size: 14.5px;
+    }
 }
 
-/***********************************************************************
- *  Brown Background
- **********************************************************************/
-.brown {
-    background: #f6e6b4; /* Old browsers */
-    background: -moz-linear-gradient(top, #f6e6b4 0%, #ed9017 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6e6b4), color-stop(100%,#ed9017)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* IE10+ */
-    background: linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); /* IE6-9 */
+@media only screen and (max-width: 453px){
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 342px) {
+    html {
+        font-size: 11.4px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    html {
+        font-size: 9px
+    }
 }
